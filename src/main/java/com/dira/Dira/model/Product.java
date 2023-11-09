@@ -4,21 +4,14 @@ package com.dira.Dira.model;
 import com.dira.Dira.enumuration.CategoryOfProduct;
 import jakarta.persistence.*;
 
-@Entity
-@Table (name = "product")
+
 public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long id;
-    @Column(name = "nameProduct")
     private String nameProduct; //Имя продукта
-    @Column(name = "measure")
     private String measure; //Мера измерения продукта
-    @Column(name = "quantity")
     private double quantity; //Кол-во продукта
-    @Column(name = "price")
     private double price; //Цена продукта
-    @Column(name = "categoryOfProduct")
     private CategoryOfProduct categoryOfProduct;
 
     public Product(int id, String nameProduct, String measure, double quantity, double price, CategoryOfProduct categoryOfProduct) {
