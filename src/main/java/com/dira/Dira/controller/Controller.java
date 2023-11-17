@@ -17,7 +17,7 @@ public class Controller {
 
     @GetMapping("/hello")
     public ResponseEntity<String> test() {
-        return new ResponseEntity(Optional.of("Hello world, Dick"), HttpStatusCode.valueOf(401));
+        return new ResponseEntity(Optional.of("Hello world,Dick"), HttpStatusCode.valueOf(401));
     }
 
 
