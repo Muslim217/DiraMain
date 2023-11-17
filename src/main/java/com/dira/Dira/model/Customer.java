@@ -69,10 +69,10 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "nameOfOrganization='" + nameOfOrganization + '\'' +
-                ", numberPhone='" + numberPhone + '\'' +
-                ", address='" + address + '\'' +
+        return "Продавец " +
+                "Имя организации = '" + nameOfOrganization + '\'' +
+                ", номер телефона = '" + numberPhone + '\'' +
+                ", адрес '" + address + '\'' +
                 '}';
     }
 
